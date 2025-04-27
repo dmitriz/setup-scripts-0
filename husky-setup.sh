@@ -33,7 +33,7 @@ mkdir -p .husky
 # Set Git to use .husky as hooks directory
 git config core.hooksPath .husky
 
-# Create pre-commit hook
+# Create `pre`-commit hook
 cat > .husky/pre-commit <<'EOF'
 #!/bin/sh
 
