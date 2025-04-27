@@ -4,7 +4,7 @@
   "description": "Minimal reusable setup scripts and planning templates for clean, safe project initialization.",
   "scripts": {
     "setup-husky": "bash husky-setup.sh",
-    "test": "vitest"
+    "test": "vitest run"
   },
   "keywords": [
     "setup",
