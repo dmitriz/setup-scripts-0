@@ -18,8 +18,17 @@ It is designed for speed, minimalism, and serious development hygiene.
 
 ## Included
 
-- **Husky Setup Script**  
-  Automate the installation and validation of Husky pre-commit enforcement (`husky-setup.sh`).
+## Git Hooks Setup
+
+Hooks are automatically installed to prevent direct commits to `main` branch and provide basic checks.
+
+### Bypassing Hooks
+
+If you need to bypass hooks manually (e.g., emergency commits, migrations), you can use:
+
+```bash
+git commit --no-verify
+git push --no-verify
 
 - **Planning Template**  
   Reusable checklist structure for starting clean project goals (`templates/planning-template.md`).
@@ -33,15 +42,15 @@ It is designed for speed, minimalism, and serious development hygiene.
 
 To quickly initialize local git safety and planning:
 
-### 1. Install Husky Setup Script (automated)
+### 1. Install Git Hooks Setup Script (automated)
 
 ```bash
-npx github:dmitriz/setup-scripts husky-setup.sh
+npx github:dmitriz/setup-scripts hooks-setup.sh
 ```
 
 This script will:
 
-- Install Husky if missing
+- Install native git hooks if missing
 - Set up pre-commit enforcement
 - Verify the setup automatically by testing a failing commit
 
@@ -68,7 +77,7 @@ setup-scripts/
 ├── templates/
 │   ├── planning-template.md
 │   └── README.md
-├── husky-setup.sh
+├── hooks-setup.sh
 ├── .gitignore
 ├── README.md
 ├── package.json

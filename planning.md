@@ -4,8 +4,8 @@
 
 - [x] Initialize Git repository
 - [x] Prepare initial README.md and project structure
-- [ ] Execute husky-setup.sh script
-- [ ] Ensure husky-setup.sh completes without errors
+- [ ] Execute hooks-setup.sh script
+- [ ] Ensure hooks-setup.sh completes without errors
 - [ ] Verify no unwanted files or artifacts are left
 - [ ] Create initial clean commit on main branch
 - [ ] Switch to a feature branch for further development
@@ -14,7 +14,7 @@
 
 ## Notes
 
-- The `husky-setup.sh` script must fully automate Husky installation, pre-commit protection, and validation.
+- The `hooks-setup.sh` script must fully automate native git hook installation, pre-commit protection, and validation.
 - After executing the script, manually check for any unexpected files or errors.
 - Only commit when the repository is clean and automation is working.
 - All further improvements will happen on feature branches.

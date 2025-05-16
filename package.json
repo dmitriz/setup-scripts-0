@@ -3,19 +3,19 @@
   "version": "1.0.0",
   "description": "Minimal reusable setup scripts and planning templates for clean, safe project initialization.",
   "scripts": {
-    "setup-husky": "bash husky-setup.sh",
+
     "test": "vitest run"
   },
   "keywords": [
     "setup",
     "scripts",
-    "husky",
+
     "git-hooks",
     "minimalist"
   ],
   "author": "dmitriz",
   "license": "MIT",
   "devDependencies": {
-    "husky": "^9.1.7"
+
   }
 }
